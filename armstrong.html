@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body style="background:darkblue;color:white">
+
+<p>Armstrong Number</p>
+
+<button>Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x) {
+var compare = x;
+
+ sum = 0;
+ 
+while(x>0){
+var p = x % 10;
+console.log(p);
+var q = x / 10;
+
+sum = sum + (p*p*p);
+ 
+
+
+q = Math.floor(q);
+console.log(q);
+
+ x = q;
+ }
+
+if(compare == sum){
+  document.getElementById("demo").innerHTML = sum +" " +"is a Armstrong number";
+  }
+  else{
+   document.getElementById("demo").innerHTML = compare +" " +"is not a Armstrong number";
+  }
+}
+
+myFunction(370)
+</script>
+
+</body>
+</html>
